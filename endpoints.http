@@ -1,0 +1,34 @@
+#PARA UTILIZAR ESSES ENDPOINTS É NECESSÁRIO INSTALAR A EXTENSÃO DO VSCODE "REST CLIENT"
+###
+
+GET http://localhost:3333/jogos
+
+###
+
+POST http://localhost:3333/jogos
+Content-Type: application/json
+
+{
+    "name": "Red dead redemption 2",
+    "genero": "mundo aberto",
+    "espaco_armazenamento": 50,
+    "data_lancamento": "2018-06-12",
+    "versao": "1.1"
+}
+
+###
+
+PUT http://localhost:3333/jogos/id
+Content-Type: application/json
+
+{
+    "name": "ORELHA",
+    "genero": "12345",
+    "esapco": "COMUM",
+    "data": "12345",
+    "versao": "COMUM"
+}
+
+###
+
+DELETE http://localhost:3333/jogos/id
